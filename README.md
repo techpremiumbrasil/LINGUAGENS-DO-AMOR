@@ -1,66 +1,100 @@
-# Instrumento das Cinco Linguagens do Amor — v3.0
+# Instrumento das Cinco Linguagens do Amor — v3.1
 
-Aplicação de página única para coleta das respostas do instrumento.
-Piloto interno.
+Aplicação web para coleta, cálculo e análise das respostas do instrumento das cinco linguagens do amor.
+
+## Estado atual
+
+- 8 conjuntos de perguntas por sexo e estado civil.
+- 20 situações por participante.
+- Primeira escolha obrigatória e segunda escolha opcional.
+- Cálculo de resultado com estados definido, empate, distribuído e inconclusivo.
+- Persistência das respostas no Supabase.
+- Painel de pesquisa protegido por autenticação do Supabase.
+- Exportação em CSV, filtros e consulta individual.
+- Versionamento do instrumento e preservação do texto integral respondido.
 
 ## Estrutura
 
 ```
-index.html              a aplicação inteira (8 conjuntos embutidos)
-config.exemplo.js       modelo de configuração
+index.html              aplicação principal e painel de pesquisa
+config.exemplo.js       modelo de configuração local
 netlify.toml            build e cabeçalhos de segurança
-scripts/gerar-config.sh gera o config.js na publicação
+scripts/gerar-config.sh gera o config.js durante o deploy
 robots.txt              bloqueia indexação por buscadores
-_redirects              rotas do Netlify
+_redirects              fallback do Netlify
 banco/                  scripts SQL do Supabase
 ```
 
-## Como funciona
+## Publicação
 
-Cada participante informa sexo e estado civil, e a aplicação seleciona
-automaticamente um dos 8 conjuntos de 20 situações. Em cada situação há
-5 alternativas, uma por linguagem: primeira escolha obrigatória, segunda
-opcional.
+A arquitetura oficial desta versão é:
 
-Cada resposta é gravada com o texto integral da situação, da pergunta e
-das alternativas marcadas, além do identificador da versão do
-instrumento. As respostas continuam legíveis mesmo que as perguntas
-sejam alteradas depois.
+GitHub → Netlify → Supabase
 
-## Configuração
+O Netlify publica diretamente a raiz do repositório. O arquivo `config.js` não deve ser versionado: ele é gerado no deploy a partir das variáveis de ambiente.
 
-O arquivo `config.js` **não fica no repositório**. Ele é gerado na
-publicação a partir de duas variáveis de ambiente definidas no Netlify:
+Variáveis exigidas no Netlify:
 
-| Variável | Onde encontrar no Supabase |
+| Variável | Valor |
 |---|---|
-| `SUPABASE_URL` | Project Settings → Data API → Project URL |
-| `SUPABASE_KEY` | Project Settings → API Keys → anon / public |
+| `SUPABASE_URL` | Project URL do projeto Supabase |
+| `SUPABASE_KEY` | chave publishable/anon pública |
 
-A chave `anon` só tem permissão de inserir respostas. Não lê, não exporta
-e não apaga. A chave `service_role` nunca deve ser usada aqui.
-
-Para rodar na sua máquina, copie `config.exemplo.js` como `config.js` e
-preencha os dois valores.
+Nunca use `service_role` no frontend.
 
 ## Banco de dados
 
-Rode os arquivos de `banco/` no SQL Editor do Supabase, nesta ordem:
+O projeto usa:
 
-1. `supabase-v3.sql` — tabelas, índices e políticas de acesso
-2. `supabase-v3-instrumento.sql` — grava a versão do instrumento (opcional)
+- `linguagem_amor_instrumento`: versões completas do instrumento.
+- `linguagem_amor_v3`: respostas dos participantes.
+- `linguagem_amor_admins`: base reservada para evolução do controle administrativo.
 
-Ler e excluir respostas exige usuário autenticado no Supabase Auth.
-O cadastro público de novos usuários deve ficar desativado.
+A chave pública pode inserir respostas. A leitura e exclusão continuam restritas a usuário autenticado, conforme as políticas RLS existentes.
+
+O projeto Supabase de produção já recebeu hardening aditivo em 13/08/2026:
+
+- tabela administrativa reservada;
+- campos `origem` e `user_agent` preparados para auditoria;
+- índices adicionais para consultas por data/segmento e linguagem principal.
+
+Nenhuma resposta existente foi removida ou alterada.
+
+## Segurança
+
+O deploy Netlify usa cabeçalhos adicionais:
+
+- `X-Frame-Options`;
+- `X-Content-Type-Options`;
+- `Referrer-Policy`;
+- `Permissions-Policy`;
+- `Cross-Origin-Opener-Policy`;
+- `X-Robots-Tag`;
+- `Cache-Control: no-store` para configuração e área administrativa.
+
+O cadastro público de usuários no Supabase Auth deve permanecer desativado.
+
+O advisor de segurança do Supabase aponta somente uma recomendação operacional pendente: habilitar proteção contra senhas conhecidas como vazadas no Auth.
 
 ## Painel de pesquisa
 
-Acrescente `#admin` ao final da URL e entre com o usuário do Supabase
-Auth. O painel traz a distribuição das linguagens, contagem por conjunto,
-tempo médio de resposta, filtros e exportação em CSV.
+Acesse `#admin` ao final da URL publicada e entre com um usuário existente no Supabase Auth.
+
+O painel permite:
+
+- distribuição das linguagens;
+- contagem por conjunto;
+- tempo médio de resposta;
+- busca por nome/código;
+- filtros por sexo e estado civil;
+- consulta detalhada;
+- exportação CSV;
+- exclusão autenticada.
 
 ## Versionamento do instrumento
 
-O identificador da versão é um resumo do próprio conteúdo. Se o texto de
-qualquer situação mudar, o identificador muda junto, e as respostas
-antigas permanecem associadas à versão que foi efetivamente respondida.
+O identificador do instrumento é derivado do próprio conteúdo. Se qualquer situação ou alternativa mudar, deve ser publicada uma nova versão em vez de sobrescrever silenciosamente a anterior. Dessa forma, respostas históricas permanecem vinculadas ao conteúdo efetivamente respondido.
+
+## Regra de manutenção
+
+Não alterar perguntas, alternativas ou regras de pontuação diretamente em produção sem criar nova versão do instrumento e validar o impacto histórico.
