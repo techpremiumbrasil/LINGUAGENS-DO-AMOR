@@ -1,6 +1,6 @@
 #!/bin/sh
 # Gera o config.js a partir das variáveis de ambiente do Netlify.
-# Injeta o motor adaptativo V5 depois do aplicativo principal.
+# Injeta o motor adaptativo V5.1 depois do aplicativo principal.
 set -e
 
 cat > config.js <<INNER
@@ -10,11 +10,11 @@ window.CONFIG = {
 };
 INNER
 
-# Remove loaders experimentais antigos do artefato de build, se existirem.
+# O artefato publicado deve carregar somente o motor atual.
 sed -i '/v4-loader.js/d' index.html
+sed -i '/v5-adaptive.js/d' index.html
+sed -i '/v51-adaptive.js/d' index.html
 
-if ! grep -q 'v5-adaptive.js' index.html; then
-  sed -i 's#</body>#<script src="/v5-adaptive.js?v=5.0-a1"></script>\n</body>#' index.html
-fi
+sed -i 's#</body>#<script src="/v51-adaptive.js?v=5.1-a1"></script>\n</body>#' index.html
 
-echo "config.js gerado e motor adaptativo V5 injetado."
+echo "config.js gerado e motor adaptativo V5.1 injetado."
