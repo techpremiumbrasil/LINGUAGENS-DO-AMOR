@@ -13,7 +13,7 @@ window.CONFIG = {
 INNER
 
 if ! grep -q 'v4-loader.js' index.html; then
-  sed -i 's#</body>#<script src="/v4-loader.js?v=4.0-c3"></script>\n</body>#' index.html
+  sed -i 's#</body>#<script src="/v4-loader.js?v=4.0-c4"></script>\n</body>#' index.html
 fi
 
 echo "config.js gerado e loader V4 injetado."
