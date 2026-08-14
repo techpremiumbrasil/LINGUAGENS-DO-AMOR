@@ -1,6 +1,6 @@
 #!/bin/sh
 # Gera o config.js a partir das variáveis de ambiente do Netlify.
-# Injeta o motor adaptativo V5.1 depois do aplicativo principal.
+# Injeta o motor adaptativo universal V5.2 depois do aplicativo principal.
 set -e
 
 cat > config.js <<INNER
@@ -14,7 +14,8 @@ INNER
 sed -i '/v4-loader.js/d' index.html
 sed -i '/v5-adaptive.js/d' index.html
 sed -i '/v51-adaptive.js/d' index.html
+sed -i '/v52-adaptive.js/d' index.html
 
-sed -i 's#</body>#<script src="/v51-adaptive.js?v=5.1-a1"></script>\n</body>#' index.html
+sed -i 's#</body>#<script src="/v52-adaptive.js?v=5.2-a1"></script>\n</body>#' index.html
 
-echo "config.js gerado e motor adaptativo V5.1 injetado."
+echo "config.js gerado e motor adaptativo universal V5.2 injetado."
