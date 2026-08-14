@@ -1,8 +1,8 @@
 (function(){
   'use strict';
-  const V4_URL='/dados/v4/homem-casado-35-44.json?v=4.0-c3';
-  const V4_ID='v4-homem-casado-35-44-c3';
-  const V4_VERSAO='4.0-c3';
+  const V4_URL='/dados/v4/homem-casado-35-44.json?v=4.0-c4';
+  const V4_ID='v4-homem-casado-35-44-c4';
+  const V4_VERSAO='4.0-c4';
   let dadosV4=null;
   let erroV4=null;
   let carregando=null;
@@ -118,18 +118,26 @@
 
   const area=document.querySelector('#area-cenario');
   if(area){
-    new MutationObserver(function(){
+    let ajustando=false;
+    const observer=new MutationObserver(function(){
+      if(ajustando) return;
       try{
         if(!document.body.classList.contains('v4-ativo')) return;
         const c=cenariosAtuais[estado.i];
         const e=estado.escolhas[estado.i];
         const etapa=area.querySelector('.etapa');
         if(!c||!e||!etapa) return;
-        etapa.textContent=e.primeira
+        const novoTexto=e.primeira
           ? 'Existe uma segunda alternativa que também representa bastante você? A segunda escolha é opcional.'
           : (c.instrucao_perspectiva||'Considere apenas esta situação e escolha o que mais representa você nela.');
-      }catch(_){ }
-    }).observe(area,{childList:true,subtree:true});
+        if(etapa.textContent!==novoTexto){
+          ajustando=true;
+          etapa.textContent=novoTexto;
+          ajustando=false;
+        }
+      }catch(_){ ajustando=false; }
+    });
+    observer.observe(area,{childList:true,subtree:true});
   }
 
   carregar();
