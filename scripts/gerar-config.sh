@@ -1,8 +1,6 @@
 #!/bin/sh
 # Gera o config.js a partir das variáveis de ambiente do Netlify.
-# Em seguida injeta o loader V4 no final do HTML, depois do aplicativo
-# principal já ter sido carregado. Isso permite substituir o banco piloto
-# no momento correto sem afetar os demais perfis.
+# Injeta o motor adaptativo V5 depois do aplicativo principal.
 set -e
 
 cat > config.js <<INNER
@@ -12,8 +10,11 @@ window.CONFIG = {
 };
 INNER
 
-if ! grep -q 'v4-loader.js' index.html; then
-  sed -i 's#</body>#<script src="/v4-loader.js?v=4.0-c4"></script>\n</body>#' index.html
+# Remove loaders experimentais antigos do artefato de build, se existirem.
+sed -i '/v4-loader.js/d' index.html
+
+if ! grep -q 'v5-adaptive.js' index.html; then
+  sed -i 's#</body>#<script src="/v5-adaptive.js?v=5.0-a1"></script>\n</body>#' index.html
 fi
 
-echo "config.js gerado e loader V4 injetado."
+echo "config.js gerado e motor adaptativo V5 injetado."
