@@ -1,0 +1,8 @@
+LINGUAGENS-DO-AMOR — MOTOR ADAPTATIVO V5.1
+versao=5.1-a1
+perfil-piloto=homem-casado-35-44
+perspectivas=9-recebo|6-espontanea|3-recordo|2-observo
+categorias=6-privacao|3-vulnerabilidade|5-rotina|3-alegria|3-memoria
+segunda-escolha=opcional-e-separada
+modo=explorar>diferenciar>contraprovar>confirmar>cruzar>resolver-inconsistencia
+outros-perfis=inalterados
