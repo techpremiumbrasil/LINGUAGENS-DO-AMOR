@@ -1,0 +1,318 @@
+{
+  "versao": "4.0-candidato-1",
+  "status": "aguardando_aprovacao_metodologica",
+  "perfil": {
+    "sexo": "masculino",
+    "estado_civil": "casado",
+    "faixa_etaria": "35-44"
+  },
+  "instrucao_inicial": "Todas as alternativas representam formas legítimas de demonstrar amor e cuidado. Não escolha a opção que parecer mais correta, madura, bondosa ou socialmente adequada. Escolha aquela que mais representa você naquela situação.",
+  "segunda_escolha": {
+    "obrigatoria": false,
+    "texto": "Existe uma segunda alternativa que também representa bastante você?"
+  },
+  "tempo_estimado": "10 a 15 minutos",
+  "distribuicao_planejada": {
+    "eu_recebo": 9,
+    "resposta_espontanea": 6,
+    "eu_recordo": 3,
+    "eu_observo": 2
+  },
+  "distribuicao_emocional": {
+    "vulnerabilidade": 7,
+    "rotina": 5,
+    "celebracao": 5,
+    "memoria_reconexao": 3
+  },
+  "rotacao_letras": "Cada linguagem aparece exatamente 4 vezes em cada posição A–E.",
+  "cenarios": [
+    {
+      "title": "Depois de uma semana cheia",
+      "situation": "Depois de uma semana com trabalho, compromissos e responsabilidades acumuladas, você chega à sexta-feira mais cansado que o normal. Não há nenhuma crise; você apenas sente que precisa desacelerar.",
+      "question": "Qual demonstração da sua esposa teria maior peso emocional para você nessa situação?",
+      "perspective": "eu_recebo",
+      "experience": "cansaço e sobrecarga",
+      "objective": "Observar qual forma de cuidado recebido ganha mais peso quando há fadiga acumulada, sem transformar a situação em emergência prática.",
+      "why_unique": "É o único item centrado em cansaço acumulado no fim de uma semana, sem doença, conflito ou decisão.",
+      "age_relevance": "compartilhado",
+      "vulnerability": "media",
+      "experience_group": "vulnerabilidade",
+      "n": 1,
+      "alternativas": [
+        {"letra":"A","codigo":"PA","texto":"Ela reconhece seu esforço e diz sinceramente o quanto valoriza você."},
+        {"letra":"B","codigo":"QT","texto":"Ela reserva um tempo só de vocês, sem pressa nem distrações."},
+        {"letra":"C","codigo":"RP","texto":"Ela escolhe algo simples e significativo para mostrar que pensou em você."},
+        {"letra":"D","codigo":"FS","texto":"Ela assume uma pequena tarefa daquela noite para aliviar sua rotina."},
+        {"letra":"E","codigo":"TF","texto":"Ela se aproxima e oferece um abraço demorado, respeitando seu momento."}
+      ],
+      "sexo":"masculino","estado_civil":"casado","faixa_etaria":"35-44","status_validacao":"candidato_revisao_v4",
+      "instrucao_perspectiva":"Escolha a alternativa que teria maior peso emocional para você nessa situação.","permite_pular":false
+    },
+    {
+      "title":"Uma boa notícia da sua esposa",
+      "situation":"Sua esposa recebe uma notícia muito boa sobre algo em que vinha se dedicando e conta a você claramente feliz com a conquista.",
+      "question":"Qual dessas atitudes surgiria primeiro em você como forma de cuidado, mesmo que você pensasse antes de agir?",
+      "perspective":"resposta_espontanea","experience":"celebração conjugal","objective":"Observar a linguagem que tende a aparecer primeiro quando o respondente expressa amor diante da alegria da esposa.","why_unique":"Mede expressão espontânea em celebração conjugal, não recepção de cuidado nem resposta a sofrimento.","age_relevance":"estado_civil","vulnerability":"baixa","experience_group":"celebracao","n":2,
+      "alternativas":[
+        {"letra":"A","codigo":"RP","texto":"Escolher algo simbólico para marcar a conquista e entregar a ela."},
+        {"letra":"B","codigo":"FS","texto":"Cuidar de um detalhe prático para facilitar a comemoração daquele dia."},
+        {"letra":"C","codigo":"TF","texto":"Abraçá-la com entusiasmo e compartilhar fisicamente a alegria do momento."},
+        {"letra":"D","codigo":"PA","texto":"Dizer o quanto você admira o esforço que levou à conquista."},
+        {"letra":"E","codigo":"QT","texto":"Separar um tempo para celebrar juntos, com atenção inteira ao momento."}
+      ],
+      "sexo":"masculino","estado_civil":"casado","faixa_etaria":"35-44","status_validacao":"candidato_revisao_v4","instrucao_perspectiva":"Escolha a atitude que surgiria primeiro em você como forma de cuidado.","permite_pular":false
+    },
+    {
+      "title":"Uma lembrança do início da vida adulta",
+      "situation":"Pense em uma fase do início da sua vida adulta em que você começou algo importante e ainda não sabia exatamente como as coisas dariam certo. Alguém próximo demonstrou cuidado com você.",
+      "question":"Qual dessas demonstrações tende a permanecer mais viva na sua memória?",
+      "perspective":"eu_recordo","experience":"transição para a vida adulta","objective":"Observar qual canal de cuidado recebido permanece mais saliente na memória de uma transição formativa.","why_unique":"É o único item que usa memória do início da vida adulta como fonte de preferência afetiva.","age_relevance":"especifico_35_44","vulnerability":"media","experience_group":"memoria_reconexao","n":3,
+      "alternativas":[
+        {"letra":"A","codigo":"TF","texto":"Um abraço acolhedor que fez você se sentir acompanhado naquele momento."},
+        {"letra":"B","codigo":"PA","texto":"Palavras sinceras que mostraram confiança em você quando havia incerteza."},
+        {"letra":"C","codigo":"QT","texto":"Um período de presença atenta, sem pressa para encerrar o encontro."},
+        {"letra":"D","codigo":"RP","texto":"Uma lembrança simbólica escolhida para marcar apoio naquela fase."},
+        {"letra":"E","codigo":"FS","texto":"Uma ajuda prática específica que tornou aquele começo um pouco mais leve."}
+      ],
+      "sexo":"masculino","estado_civil":"casado","faixa_etaria":"35-44","status_validacao":"candidato_revisao_v4","instrucao_perspectiva":"Escolha aquilo que tende a permanecer mais vivo na sua memória.","permite_pular":false
+    },
+    {
+      "title":"Uma noite comum em casa",
+      "situation":"É uma noite comum, sem problema, comemoração ou pendência importante. Vocês estão em casa e têm algum tempo antes de encerrar o dia.",
+      "question":"Qual manifestação faria você perceber mais claramente o carinho dela naquela noite?",
+      "perspective":"eu_recebo","experience":"rotina conjugal neutra","objective":"Medir preferência de recepção em contexto cotidiano, sem vulnerabilidade ou evento especial.","why_unique":"É o item mais neutro do banco e funciona como contraste aos cenários emocionalmente carregados.","age_relevance":"estado_civil","vulnerability":"baixa","experience_group":"rotina","n":4,
+      "alternativas":[
+        {"letra":"A","codigo":"QT","texto":"Ela propõe fazer algo simples juntos e deixa o celular de lado."},
+        {"letra":"B","codigo":"RP","texto":"Ela traz uma pequena lembrança escolhida porque combinava com você."},
+        {"letra":"C","codigo":"FS","texto":"Ela cuida espontaneamente de uma tarefa que normalmente ficaria com você."},
+        {"letra":"D","codigo":"TF","texto":"Ela busca proximidade com um abraço ou carinho físico respeitoso."},
+        {"letra":"E","codigo":"PA","texto":"Ela comenta algo específico que admira em você no dia a dia."}
+      ],
+      "sexo":"masculino","estado_civil":"casado","faixa_etaria":"35-44","status_validacao":"candidato_revisao_v4","instrucao_perspectiva":"Escolha a alternativa que teria maior peso emocional para você nessa situação.","permite_pular":false
+    },
+    {
+      "title":"Uma decepção entre irmãos",
+      "situation":"Um homem conta à irmã que não foi escolhido para uma oportunidade que desejava. Ele está frustrado, mas já sabe quais serão seus próximos passos.",
+      "question":"Qual atitude da irmã lhe pareceria mais significativa como expressão de amor e apoio nessa situação?",
+      "perspective":"eu_observo","experience":"frustração de terceiro","objective":"Observar qual linguagem o respondente interpreta como mais significativa ao avaliar apoio entre terceiros.","why_unique":"É o primeiro item de observação e desloca o respondente para uma relação entre irmãos, reduzindo autorreferência.","age_relevance":"compartilhado","vulnerability":"media","experience_group":"vulnerabilidade","n":5,
+      "alternativas":[
+        {"letra":"A","codigo":"FS","texto":"Ajudá-lo em uma providência pequena relacionada aos próximos passos."},
+        {"letra":"B","codigo":"TF","texto":"Oferecer um abraço acolhedor, caso ele se sinta confortável com isso."},
+        {"letra":"C","codigo":"PA","texto":"Reconhecer o esforço dele e lembrar qualidades que ela realmente percebe."},
+        {"letra":"D","codigo":"QT","texto":"Ficar com ele por um tempo, ouvindo sem dividir a atenção."},
+        {"letra":"E","codigo":"RP","texto":"Entregar depois algo simbólico que represente incentivo e lembrança."}
+      ],
+      "sexo":"masculino","estado_civil":"casado","faixa_etaria":"35-44","status_validacao":"candidato_revisao_v4","instrucao_perspectiva":"Escolha a atitude que lhe pareceria mais significativa como expressão de amor nessa situação.","permite_pular":false
+    },
+    {
+      "title":"Uma conquista profissional importante",
+      "situation":"Depois de um período de dedicação, você recebe um reconhecimento profissional ou conclui um projeto relevante para sua trajetória. Sua esposa fica sabendo da conquista.",
+      "question":"Qual reação dela faria essa conquista ter mais peso afetivo para você?",
+      "perspective":"eu_recebo","experience":"conquista profissional","objective":"Observar preferência de recepção durante reconhecimento profissional típico da meia-idade adulta, sem pressupor cargo ou renda.","why_unique":"É o único item que mede como uma conquista profissional própria ganha significado afetivo.","age_relevance":"especifico_35_44","vulnerability":"baixa","experience_group":"celebracao","n":6,
+      "alternativas":[
+        {"letra":"A","codigo":"QT","texto":"Ela separa um tempo para vocês celebrarem juntos, sem dividir a atenção."},
+        {"letra":"B","codigo":"RP","texto":"Ela escolhe uma lembrança simbólica que marque essa etapa da sua trajetória."},
+        {"letra":"C","codigo":"FS","texto":"Ela cuida de um detalhe da comemoração para você aproveitar o momento."},
+        {"letra":"D","codigo":"TF","texto":"Ela o abraça com entusiasmo e permanece próxima durante a celebração."},
+        {"letra":"E","codigo":"PA","texto":"Ela diz com sinceridade o que admira na sua dedicação ao longo do tempo."}
+      ],
+      "sexo":"masculino","estado_civil":"casado","faixa_etaria":"35-44","status_validacao":"candidato_revisao_v4","instrucao_perspectiva":"Escolha a alternativa que teria maior peso emocional para você nessa situação.","permite_pular":false
+    },
+    {
+      "title":"Um amigo atravessa uma separação",
+      "situation":"Um amigo próximo conta que está passando por uma separação e demonstra estar emocionalmente abatido. Ele procura sua companhia, sem pedir uma solução específica.",
+      "question":"Qual dessas atitudes surgiria primeiro em você como forma de cuidado, mesmo que você pensasse antes de agir?",
+      "perspective":"resposta_espontanea","experience":"sofrimento de amigo","objective":"Observar a forma de cuidado que o respondente tende a oferecer a um amigo em dor relacional.","why_unique":"É o único item sobre amizade em sofrimento e mede expressão, não recepção ou observação.","age_relevance":"compartilhado","vulnerability":"media","experience_group":"vulnerabilidade","n":7,
+      "alternativas":[
+        {"letra":"A","codigo":"TF","texto":"Oferecer um abraço, se ele demonstrar conforto com esse tipo de proximidade."},
+        {"letra":"B","codigo":"PA","texto":"Dizer que você reconhece o que ele está vivendo e valoriza sua amizade."},
+        {"letra":"C","codigo":"QT","texto":"Reservar um tempo para ficar com ele sem pressa nem distrações."},
+        {"letra":"D","codigo":"RP","texto":"Levar depois algo simples que tenha significado pessoal para ele."},
+        {"letra":"E","codigo":"FS","texto":"Assumir uma pequena tarefa concreta que esteja pesando naquela semana."}
+      ],
+      "sexo":"masculino","estado_civil":"casado","faixa_etaria":"35-44","status_validacao":"candidato_revisao_v4","instrucao_perspectiva":"Escolha a atitude que surgiria primeiro em você como forma de cuidado.","permite_pular":false
+    },
+    {
+      "title":"Uma despesa inesperada",
+      "situation":"Surge uma despesa importante e inesperada no orçamento da casa. Vocês já entenderam o problema e começaram a reorganizar as prioridades; agora precisam conviver com a preocupação por algum tempo.",
+      "question":"Qual forma de cuidado da sua esposa teria maior peso emocional para você nesse período?",
+      "perspective":"eu_recebo","experience":"preocupação financeira compartilhada","objective":"Medir preferência de cuidado recebido sob pressão financeira depois que a parte objetiva do problema já começou a ser tratada.","why_unique":"É o único item sobre preocupação financeira e foi formulado para impedir que Serviço seja a única opção funcional.","age_relevance":"especifico_35_44","vulnerability":"media","experience_group":"vulnerabilidade","n":8,
+      "alternativas":[
+        {"letra":"A","codigo":"PA","texto":"Ela expressa confiança na parceria de vocês para atravessar aquela fase."},
+        {"letra":"B","codigo":"QT","texto":"Ela reserva um momento tranquilo para vocês estarem juntos além do problema."},
+        {"letra":"C","codigo":"RP","texto":"Ela escolhe algo simples e simbólico para lembrar que vocês continuam conectados."},
+        {"letra":"D","codigo":"FS","texto":"Ela assume uma pequena responsabilidade habitual para liberar espaço mental para você."},
+        {"letra":"E","codigo":"TF","texto":"Ela segura sua mão ou oferece um abraço calmo durante aquele período."}
+      ],
+      "sexo":"masculino","estado_civil":"casado","faixa_etaria":"35-44","status_validacao":"candidato_revisao_v4","instrucao_perspectiva":"Escolha a alternativa que teria maior peso emocional para você nessa situação.","permite_pular":false
+    },
+    {
+      "title":"Mais presença com pai ou mãe",
+      "situation":"Seu pai ou sua mãe comenta que gostaria de estar mais presente na rotina da família. Não há urgência nem problema grave; é um desejo de maior proximidade.",
+      "question":"Qual atitude surgiria primeiro em você como forma de cuidado?",
+      "perspective":"resposta_espontanea","experience":"vínculo com pais na vida adulta","objective":"Observar como o respondente expressa cuidado na relação intergeracional típica da fase adulta intermediária.","why_unique":"É o único item de aproximação cotidiana com pai ou mãe sem doença, crise ou celebração.","age_relevance":"especifico_35_44","vulnerability":"baixa","experience_group":"rotina","n":9,
+      "alternativas":[
+        {"letra":"A","codigo":"FS","texto":"Organizar uma pequena ajuda prática que facilite a rotina dele ou dela."},
+        {"letra":"B","codigo":"TF","texto":"Cumprimentá-lo com carinho e manter proximidade física apropriada ao vínculo."},
+        {"letra":"C","codigo":"PA","texto":"Dizer de forma específica o quanto aquela presença é importante para você."},
+        {"letra":"D","codigo":"QT","texto":"Combinar um momento para fazerem algo juntos com atenção de verdade."},
+        {"letra":"E","codigo":"RP","texto":"Levar uma lembrança simples escolhida por ter significado para vocês."}
+      ],
+      "sexo":"masculino","estado_civil":"casado","faixa_etaria":"35-44","status_validacao":"candidato_revisao_v4","instrucao_perspectiva":"Escolha a atitude que surgiria primeiro em você como forma de cuidado.","permite_pular":false
+    },
+    {
+      "title":"Depois de uma reconciliação",
+      "situation":"Depois de um desentendimento, vocês já conversaram, reconheceram os erros e pediram desculpas. Nos dias seguintes, os dois querem recuperar a sensação de proximidade.",
+      "question":"O que ajudaria você a sentir com mais força que a conexão foi restaurada?",
+      "perspective":"eu_recebo","experience":"reconciliação conjugal","objective":"Observar o canal que mais comunica restauração depois que as obrigações básicas de reparação já aconteceram.","why_unique":"É o único item sobre reconexão após conflito e não usa pedido de desculpas como alternativa.","age_relevance":"estado_civil","vulnerability":"media","experience_group":"memoria_reconexao","n":10,
+      "alternativas":[
+        {"letra":"A","codigo":"RP","texto":"Ela escolhe algo simbólico que represente a importância da história de vocês."},
+        {"letra":"B","codigo":"FS","texto":"Ela muda uma atitude prática relacionada ao que vinha desgastando a convivência."},
+        {"letra":"C","codigo":"TF","texto":"Ela retoma o carinho físico de forma espontânea e respeitosa."},
+        {"letra":"D","codigo":"PA","texto":"Ela expressa o que continua valorizando em você e no casamento."},
+        {"letra":"E","codigo":"QT","texto":"Ela cria um tempo só de vocês para retomar a presença com calma."}
+      ],
+      "sexo":"masculino","estado_civil":"casado","faixa_etaria":"35-44","status_validacao":"candidato_revisao_v4","instrucao_perspectiva":"Escolha a alternativa que teria maior peso emocional para você nessa situação.","permite_pular":false
+    },
+    {
+      "title":"Uma conquista que ficou na memória",
+      "situation":"Pense em uma conquista sua, de qualquer fase da vida, que foi celebrada por alguém importante e que ainda hoje traz uma lembrança positiva.",
+      "question":"Qual parte dessa demonstração tende a permanecer mais viva na sua memória?",
+      "perspective":"eu_recordo","experience":"memória de celebração","objective":"Medir saliência mnemônica das cinco linguagens em uma lembrança positiva, reduzindo viés de sofrimento.","why_unique":"É o único item de memória explicitamente ancorado em alegria e conquista.","age_relevance":"compartilhado","vulnerability":"baixa","experience_group":"celebracao","n":11,
+      "alternativas":[
+        {"letra":"A","codigo":"PA","texto":"As palavras específicas de orgulho e reconhecimento que você recebeu."},
+        {"letra":"B","codigo":"QT","texto":"O tempo que a pessoa dedicou para celebrar aquilo junto com você."},
+        {"letra":"C","codigo":"RP","texto":"A lembrança simbólica escolhida para marcar aquela conquista."},
+        {"letra":"D","codigo":"FS","texto":"A atitude prática que tornou a celebração mais leve para você."},
+        {"letra":"E","codigo":"TF","texto":"O abraço ou carinho físico que acompanhou a comemoração."}
+      ],
+      "sexo":"masculino","estado_civil":"casado","faixa_etaria":"35-44","status_validacao":"candidato_revisao_v4","instrucao_perspectiva":"Escolha aquilo que tende a permanecer mais vivo na sua memória.","permite_pular":false
+    },
+    {
+      "title":"Um fim de semana sem programação",
+      "situation":"Chega um fim de semana comum. Há pequenas tarefas em casa, mas nada urgente, e vocês têm algumas horas livres para conduzir o dia como preferirem.",
+      "question":"Qual demonstração faria você perceber mais carinho na rotina de vocês?",
+      "perspective":"eu_recebo","experience":"rotina doméstica compartilhada","objective":"Observar preferência de recepção numa rotina doméstica com baixa pressão e liberdade de escolha.","why_unique":"Diferencia-se da noite comum por incluir convivência prolongada e pequenas responsabilidades compartilhadas.","age_relevance":"estado_civil","vulnerability":"baixa","experience_group":"rotina","n":12,
+      "alternativas":[
+        {"letra":"A","codigo":"RP","texto":"Ela traz uma pequena lembrança ligada a algo de que você gosta."},
+        {"letra":"B","codigo":"FS","texto":"Ela assume espontaneamente uma das tarefas simples daquele dia."},
+        {"letra":"C","codigo":"TF","texto":"Ela busca proximidade com abraços ou carinho físico ao longo do dia."},
+        {"letra":"D","codigo":"PA","texto":"Ela comenta algo que aprecia na forma como você conduz a vida."},
+        {"letra":"E","codigo":"QT","texto":"Ela propõe fazer algo juntos e protege aquele tempo de distrações."}
+      ],
+      "sexo":"masculino","estado_civil":"casado","faixa_etaria":"35-44","status_validacao":"candidato_revisao_v4","instrucao_perspectiva":"Escolha a alternativa que teria maior peso emocional para você nessa situação.","permite_pular":false
+    },
+    {
+      "title":"Um amigo conclui um projeto pessoal",
+      "situation":"Um amigo próximo conclui um projeto pessoal importante que vinha desenvolvendo há bastante tempo e conta a você claramente satisfeito com o resultado.",
+      "question":"Qual atitude surgiria primeiro em você como forma de cuidado e celebração?",
+      "perspective":"resposta_espontanea","experience":"celebração de amizade","objective":"Observar como o respondente demonstra amor em uma conquista alheia fora do casamento.","why_unique":"É o contraponto social ao item de celebração conjugal e testa expressão de cuidado em amizade.","age_relevance":"compartilhado","vulnerability":"baixa","experience_group":"celebracao","n":13,
+      "alternativas":[
+        {"letra":"A","codigo":"QT","texto":"Convidá-lo para passar um tempo juntos celebrando a conquista com atenção."},
+        {"letra":"B","codigo":"RP","texto":"Escolher uma lembrança simbólica que tenha relação com o projeto concluído."},
+        {"letra":"C","codigo":"FS","texto":"Ajudar em um detalhe prático para ele aproveitar melhor a comemoração."},
+        {"letra":"D","codigo":"TF","texto":"Cumprimentá-lo com um abraço entusiasmado, se isso for natural entre vocês."},
+        {"letra":"E","codigo":"PA","texto":"Dizer o que você admira no esforço que ele manteve até concluir."}
+      ],
+      "sexo":"masculino","estado_civil":"casado","faixa_etaria":"35-44","status_validacao":"candidato_revisao_v4","instrucao_perspectiva":"Escolha a atitude que surgiria primeiro em você como forma de cuidado.","permite_pular":false
+    },
+    {
+      "title":"Carinho sem data especial",
+      "situation":"Um casal de amigos chega ao fim de uma semana comum e quer demonstrar carinho um ao outro, sem aniversário, problema ou ocasião especial.",
+      "question":"Qual atitude de um deles lhe pareceria mais significativa como expressão de amor nessa situação?",
+      "perspective":"eu_observo","experience":"afeto cotidiano observado","objective":"Observar a interpretação do respondente sobre amor em uma relação conjugal de terceiros em contexto neutro.","why_unique":"É o único item de observação em rotina positiva e equilibra o item observado de frustração.","age_relevance":"estado_civil","vulnerability":"baixa","experience_group":"rotina","n":14,
+      "alternativas":[
+        {"letra":"A","codigo":"TF","texto":"Aproximar-se com um abraço e manter carinho físico ao longo da noite."},
+        {"letra":"B","codigo":"PA","texto":"Dizer algo específico que admira na pessoa durante aquela semana."},
+        {"letra":"C","codigo":"QT","texto":"Deixar as distrações de lado e fazer algo simples juntos."},
+        {"letra":"D","codigo":"RP","texto":"Entregar uma pequena lembrança escolhida porque recordou a pessoa durante o dia."},
+        {"letra":"E","codigo":"FS","texto":"Cuidar espontaneamente de uma tarefa habitual para tornar a noite mais leve."}
+      ],
+      "sexo":"masculino","estado_civil":"casado","faixa_etaria":"35-44","status_validacao":"candidato_revisao_v4","instrucao_perspectiva":"Escolha a atitude que lhe pareceria mais significativa como expressão de amor nessa situação.","permite_pular":false
+    },
+    {
+      "title":"Uma decisão profissional importante",
+      "situation":"Você considera uma mudança profissional relevante. Já levantou as informações práticas e ainda não decidiu; o que pesa agora é conviver com a incerteza da escolha.",
+      "question":"Qual forma de apoio da sua esposa teria maior peso emocional para você nesse momento?",
+      "perspective":"eu_recebo","experience":"decisão profissional","objective":"Medir preferência de suporte durante uma decisão de carreira depois que a análise objetiva já foi feita.","why_unique":"É o único item sobre incerteza de carreira futura, diferente da conquista profissional já alcançada.","age_relevance":"especifico_35_44","vulnerability":"media","experience_group":"vulnerabilidade","n":15,
+      "alternativas":[
+        {"letra":"A","codigo":"FS","texto":"Ela ajuda a organizar um pequeno passo concreto sem decidir por você."},
+        {"letra":"B","codigo":"TF","texto":"Ela oferece proximidade física acolhedora enquanto vocês convivem com a incerteza."},
+        {"letra":"C","codigo":"PA","texto":"Ela lembra qualidades reais que percebe em você diante dessa escolha."},
+        {"letra":"D","codigo":"QT","texto":"Ela reserva um tempo para estar com você sem transformar tudo em decisão."},
+        {"letra":"E","codigo":"RP","texto":"Ela escolhe algo simbólico que represente confiança nessa nova etapa."}
+      ],
+      "sexo":"masculino","estado_civil":"casado","faixa_etaria":"35-44","status_validacao":"candidato_revisao_v4","instrucao_perspectiva":"Escolha a alternativa que teria maior peso emocional para você nessa situação.","permite_pular":false
+    },
+    {
+      "title":"Um dos seus pais está apreensivo",
+      "situation":"Um dos seus pais está apreensivo antes de uma consulta ou exame de rotina e comenta isso com você. Não há notícia de algo grave; existe apenas ansiedade com aquele momento.",
+      "question":"Qual atitude surgiria primeiro em você como forma de cuidado?",
+      "perspective":"resposta_espontanea","experience":"apreensão de familiar","objective":"Observar expressão de cuidado intergeracional em vulnerabilidade leve, sem transformar ajuda prática em necessidade dominante.","why_unique":"É o único item com apreensão de saúde leve em um familiar e mede o que o respondente oferece.","age_relevance":"especifico_35_44","vulnerability":"media","experience_group":"vulnerabilidade","n":16,
+      "alternativas":[
+        {"letra":"A","codigo":"TF","texto":"Oferecer um abraço ou toque acolhedor, conforme o jeito de vocês."},
+        {"letra":"B","codigo":"PA","texto":"Dizer que você está com ele e reconhece a apreensão daquele momento."},
+        {"letra":"C","codigo":"QT","texto":"Separar um tempo para ficar por perto antes ou depois da consulta."},
+        {"letra":"D","codigo":"RP","texto":"Levar algo simples e significativo para transmitir cuidado naquele dia."},
+        {"letra":"E","codigo":"FS","texto":"Cuidar de um detalhe prático relacionado ao deslocamento ou à agenda."}
+      ],
+      "sexo":"masculino","estado_civil":"casado","faixa_etaria":"35-44","status_validacao":"candidato_revisao_v4","instrucao_perspectiva":"Escolha a atitude que surgiria primeiro em você como forma de cuidado.","permite_pular":false
+    },
+    {
+      "title":"Uma fase de proximidade no casamento",
+      "situation":"Pense em uma fase do casamento em que vocês se sentiram especialmente unidos, sem precisar ter sido uma viagem, aniversário ou grande acontecimento.",
+      "question":"Qual tipo de demonstração tende a permanecer mais vivo na sua memória dessa fase?",
+      "perspective":"eu_recordo","experience":"memória de conexão conjugal","objective":"Observar qual linguagem se torna marcador de memória em uma fase positiva do casamento.","why_unique":"É o único item de memória focado especificamente em conexão conjugal prolongada, não em evento pontual.","age_relevance":"estado_civil","vulnerability":"baixa","experience_group":"memoria_reconexao","n":17,
+      "alternativas":[
+        {"letra":"A","codigo":"FS","texto":"Uma atitude prática dela que fez você perceber parceria no cotidiano."},
+        {"letra":"B","codigo":"TF","texto":"Um gesto de carinho físico que marcou aquela fase de proximidade."},
+        {"letra":"C","codigo":"PA","texto":"Uma frase sincera que deixou claro o que ela valorizava em você."},
+        {"letra":"D","codigo":"QT","texto":"Um momento de presença inteira que vocês viveram juntos sem pressa."},
+        {"letra":"E","codigo":"RP","texto":"Uma lembrança simbólica que passou a representar aquela fase para vocês."}
+      ],
+      "sexo":"masculino","estado_civil":"casado","faixa_etaria":"35-44","status_validacao":"candidato_revisao_v4","instrucao_perspectiva":"Escolha aquilo que tende a permanecer mais vivo na sua memória.","permite_pular":false
+    },
+    {
+      "title":"Um projeto pessoal que começa agora",
+      "situation":"Você decide iniciar um projeto pessoal que vinha adiando, como um curso, empreendimento, esporte ou atividade criativa. Ainda não há resultado; é apenas o começo de uma nova etapa.",
+      "question":"Qual reação da sua esposa faria você se sentir mais apoiado nessa nova fase?",
+      "perspective":"eu_recebo","experience":"início de novo projeto","objective":"Observar preferência de cuidado diante de expansão pessoal típica da fase adulta, antes de existir sucesso ou fracasso.","why_unique":"É o único item sobre começo voluntário de projeto e mede apoio à autonomia, não celebração de resultado.","age_relevance":"especifico_35_44","vulnerability":"baixa","experience_group":"celebracao","n":18,
+      "alternativas":[
+        {"letra":"A","codigo":"RP","texto":"Ela escolhe algo simbólico ligado ao projeto para marcar seu começo."},
+        {"letra":"B","codigo":"FS","texto":"Ela ajusta um pequeno detalhe da rotina para abrir espaço ao projeto."},
+        {"letra":"C","codigo":"TF","texto":"Ela demonstra entusiasmo com um abraço ou carinho físico espontâneo."},
+        {"letra":"D","codigo":"PA","texto":"Ela diz o que acredita que você pode desenvolver nessa nova etapa."},
+        {"letra":"E","codigo":"QT","texto":"Ela reserva um tempo para conhecer melhor o projeto e compartilhar seu entusiasmo."}
+      ],
+      "sexo":"masculino","estado_civil":"casado","faixa_etaria":"35-44","status_validacao":"candidato_revisao_v4","instrucao_perspectiva":"Escolha a alternativa que teria maior peso emocional para você nessa situação.","permite_pular":false
+    },
+    {
+      "title":"Carinho numa noite comum",
+      "situation":"Em uma noite comum, sua esposa chega em casa sem problema específico. Você quer demonstrar carinho de forma espontânea, sem que ela tenha pedido nada.",
+      "question":"Qual atitude surgiria primeiro em você como forma de cuidado?",
+      "perspective":"resposta_espontanea","experience":"carinho conjugal cotidiano","objective":"Medir expressão espontânea de afeto no casamento em condição completamente neutra.","why_unique":"É o único item de expressão conjugal sem conquista, sofrimento, pedido ou reconciliação.","age_relevance":"estado_civil","vulnerability":"baixa","experience_group":"rotina","n":19,
+      "alternativas":[
+        {"letra":"A","codigo":"PA","texto":"Dizer algo específico que você apreciou nela naquele dia."},
+        {"letra":"B","codigo":"QT","texto":"Convidá-la para um momento juntos sem celular ou outras distrações."},
+        {"letra":"C","codigo":"RP","texto":"Entregar uma pequena lembrança que você escolheu pensando nela."},
+        {"letra":"D","codigo":"FS","texto":"Cuidar espontaneamente de uma tarefa que ela faria naquela noite."},
+        {"letra":"E","codigo":"TF","texto":"Recebê-la com um abraço ou outro gesto físico de carinho."}
+      ],
+      "sexo":"masculino","estado_civil":"casado","faixa_etaria":"35-44","status_validacao":"candidato_revisao_v4","instrucao_perspectiva":"Escolha a atitude que surgiria primeiro em você como forma de cuidado.","permite_pular":false
+    },
+    {
+      "title":"Um dia para desacelerar",
+      "situation":"Depois de alguns dias intensos, você acorda sem muita energia e decide reduzir o ritmo por um dia. Não é algo grave; você apenas precisa de recuperação e tranquilidade.",
+      "question":"Qual demonstração da sua esposa teria maior peso emocional para você nesse dia?",
+      "perspective":"eu_recebo","experience":"desaceleração e baixa energia","objective":"Observar preferência de cuidado recebido em indisposição leve, formulada para evitar privilégio automático de Serviço.","why_unique":"É o único item ligado a baixa energia física leve e não envolve doença, crise ou desempenho.","age_relevance":"compartilhado","vulnerability":"media","experience_group":"vulnerabilidade","n":20,
+      "alternativas":[
+        {"letra":"A","codigo":"QT","texto":"Ela passa um tempo ao seu lado, sem pressa nem outras distrações."},
+        {"letra":"B","codigo":"RP","texto":"Ela escolhe algo simples e significativo para tornar o dia mais acolhedor."},
+        {"letra":"C","codigo":"FS","texto":"Ela assume uma pequena responsabilidade para você conseguir desacelerar naquele dia."},
+        {"letra":"D","codigo":"TF","texto":"Ela oferece um abraço ou carinho físico respeitando seu estado e espaço."},
+        {"letra":"E","codigo":"PA","texto":"Ela expressa carinho em palavras e reconhece o esforço dos últimos dias."}
+      ],
+      "sexo":"masculino","estado_civil":"casado","faixa_etaria":"35-44","status_validacao":"candidato_revisao_v4","instrucao_perspectiva":"Escolha a alternativa que teria maior peso emocional para você nessa situação.","permite_pular":false
+    }
+  ]
+}
