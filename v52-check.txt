@@ -1,0 +1,8 @@
+LINGUAGENS-DO-AMOR — MOTOR ADAPTATIVO V5.2
+versao=5.2-a1
+cobertura=48-perfis
+sexos=2
+estados-civis=4
+faixas-etarias=6
+motor=v52-adaptive.js
+validador=scripts/validar-v52.cjs
