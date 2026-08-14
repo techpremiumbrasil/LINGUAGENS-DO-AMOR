@@ -1,0 +1,4 @@
+LINGUAGENS-DO-AMOR — MOTOR ADAPTATIVO V5
+versao=5.0-a1
+perfil-piloto=homem-casado-35-44
+modo=exploracao>diferenciacao>contraprova>confirmacao
