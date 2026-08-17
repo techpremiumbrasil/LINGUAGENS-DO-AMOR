@@ -1,6 +1,6 @@
 [build]
   publish = "."
-  command = "node scripts/validar-v52.cjs && sh scripts/gerar-config.sh"
+  command = "node scripts/validar-v52.cjs && node scripts/validar-v53.cjs && sh scripts/gerar-config.sh"
 
 [[headers]]
   for = "/*"
