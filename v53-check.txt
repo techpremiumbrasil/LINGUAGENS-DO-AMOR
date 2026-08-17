@@ -1,0 +1,9 @@
+LINGUAGENS-DO-AMOR — CALIBRAÇÃO EMPÍRICA V5.3
+versao=5.3-ab1
+base-congelada=5.2-a1
+backup=backup/v5.2-a1-stable
+familias-reconstruir=6
+familias-revisar=8
+familias-preservadas=18
+modo=A/B-deterministico
+feedback-cognitivo=ativo
