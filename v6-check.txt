@@ -1,0 +1,8 @@
+LINGUAGENS-DO-AMOR — MOTOR INFERENCIAL ADAPTATIVO V6
+versao=6.0-inferencial-a1
+base_textual=5.2-a1
+modo=probabilidade>ganho-de-informacao>contraprova>confirmacao-cruzada
+perguntas=min-10|max-24|parada-dinamica
+empate=sem-vencedor-artificial
+calibracao_empirica=267-respostas-v5.2
+backup=backup/v5.2-a1-pre-v6-inferencial
